@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { AppLayout, HomePage, ProfilePage, SavedPage } from './pages'
+import { AppLayout, HomePage, ProfilePage, SavedPage } from '@/pages'
 
 import './index.css'
 
