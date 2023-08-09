@@ -19,7 +19,7 @@ const ListItem = ({ link }: LinkItemProps) => {
     <a href="#" className="truncate p-4 rounded-xl bg-zinc-900">
       <div className="flex gap-4 items-center">
         <div
-          className="rounded-xl w-12 h-12 flex items-center justify-center"
+          className="rounded-xl w-12 h-12 flex items-center justify-center text-black"
           style={{ background: linkStyle.color }}
         >
           {linkStyle.icon}

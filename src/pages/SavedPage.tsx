@@ -1,3 +1,9 @@
 export const SavedPage = () => {
-  return <>Saved</>
+  return (
+    <div className="container">
+      <div className="max-w-3xl mx-auto">
+        <div></div>
+      </div>
+    </div>
+  )
 }

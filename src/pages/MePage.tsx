@@ -1,4 +1,3 @@
-import { Head } from '@/components/app'
 import { LinkList } from '@/components/app'
 import { JSLink, LinkListMode } from '@/types'
 import { BiPlus, BiMove } from 'react-icons/bi'
@@ -7,36 +6,37 @@ const links: JSLink[] = [
   {
     title: 'Yaroslav Nosenko',
     subtitle: 'Software Engineer',
-    url: 'https://www.linkedin.com/in/john-doe/',
+    url: 'https://www.linkedin.com/in/john-doe',
   },
   {
     title: 'John Doe',
     subtitle: 'Meta',
-    url: 'https://www.linkedin.com/in/john-doe/',
+    url: 'https://www.instagram.com/john-doe',
   },
   {
     title: 'John Doe',
     subtitle: 'Meta',
-    url: 'https://www.linkedin.com/in/john-doe/',
+    url: 'https://www.fb.com/john-doe',
   },
   {
-    title: 'John Doe',
-    subtitle: 'Meta',
-    url: 'https://www.linkedin.com/in/john-doe/',
+    title: 'Some Link',
+    subtitle: 'Website',
+    url: 'https://www.somelink.com/other',
   },
   {
-    title: 'John Doe',
-    subtitle: 'Meta',
-    url: 'https://www.linkedin.com/in/john-doe/',
+    title: 'Yaroslav Nosenko',
+    subtitle: 'Telegram',
+    url: 'https://www.t.me/tel',
   },
 ]
 
-export const ProfilePage = () => {
+export const MePage = () => {
   return (
     <div className="container">
       <div className="max-w-3xl mx-auto">
-        <div className="pb-12 pt-24">
-          <Head name="Gregory Black" summary="Software Engineer" />
+        <div className="text-center py-12 lg:pt-24">
+          <h1 className="font-bold text-3xl leading-tight">Gregory Black</h1>
+          <p className="opacity-60 pt-2">@Software Engineer</p>
         </div>
         <div className="flex justify-between">
           <button className="flex gap-2 opacity-60 h-16 items-center">
