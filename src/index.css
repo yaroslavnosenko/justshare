@@ -9,3 +9,8 @@
 .pb-safe {
   padding-bottom: env(safe-area-inset-bottom);
 }
+
+* {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+}
