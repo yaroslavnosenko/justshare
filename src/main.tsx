@@ -1,7 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { AppLayout, HomePage, ProfilePage, SavedPage } from '@/pages'
+import {
+  AppLayout,
+  HomePage,
+  ProfilePage,
+  SavedPage,
+  NewLinkPage,
+} from '@/pages'
+import '@fontsource-variable/outfit'
 
 import './index.css'
 
@@ -17,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: 'profile',
         element: <ProfilePage />,
+      },
+      {
+        path: 'profile/new-link',
+        element: <NewLinkPage />,
       },
       {
         path: 'saved',
