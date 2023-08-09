@@ -5,7 +5,11 @@ export const AppLayout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <div className="pt-safe pb-safe">
+        <div className="pt-20 pb-32 lg:pb-48">
+          <Outlet />
+        </div>
+      </div>
       <Footer />
       <Nav />
     </>
