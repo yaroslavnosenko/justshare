@@ -1,6 +1,7 @@
 import { LinkList } from '@/components/app'
 import { JSLink, LinkListMode } from '@/types'
 import { BiPlus, BiMove } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 const links: JSLink[] = [
   {
@@ -39,14 +40,17 @@ export const MePage = () => {
           <p className="opacity-60 pt-2">@Software Engineer</p>
         </div>
         <div className="flex justify-between">
-          <button className="flex gap-2 opacity-60 h-16 items-center">
+          <button className="flex gap-2 opacity-60 h-16 items-center font-medium">
             <BiMove className="w-6 h-6" />
             <span>Reorder</span>
           </button>
-          <button className="flex gap-2 text-emerald-400 h-16 items-center">
+          <Link
+            to="/me/new-link"
+            className="flex gap-2 text-emerald-400 h-16 items-center font-medium"
+          >
             <BiPlus className="w-6 h-6" />
             <span>Add Link</span>
-          </button>
+          </Link>
         </div>
         <LinkList links={links} mode={LinkListMode.SHARE} />
       </div>

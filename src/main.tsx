@@ -1,7 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { AppLayout, HomePage, MePage, SavedPage, NewLinkPage } from '@/pages'
+import {
+  AppLayout,
+  HomePage,
+  MePage,
+  SavedPage,
+  NewLinkPage,
+  LinkPage,
+} from '@/pages'
 import '@fontsource-variable/outfit'
 
 import './index.css'
@@ -18,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: 'me',
         element: <MePage />,
+      },
+      {
+        path: 'me/:id',
+        element: <LinkPage />,
       },
       {
         path: 'me/new-link',

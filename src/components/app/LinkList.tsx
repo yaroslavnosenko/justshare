@@ -16,7 +16,7 @@ const ListItem = ({ link }: LinkItemProps) => {
   const { title, subtitle, url } = link
   const linkStyle = getLinkStyle(url)
   return (
-    <a href="#" className="truncate p-4 rounded-xl bg-zinc-900">
+    <a href="/me/id" className="truncate p-4 rounded-xl bg-zinc-900">
       <div className="flex gap-4 items-center">
         <div
           className="rounded-xl w-12 h-12 flex items-center justify-center text-black"

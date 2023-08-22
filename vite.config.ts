@@ -12,7 +12,7 @@ export default defineConfig({
         type: 'module',
       },
       manifest: {
-        display: 'standalone',
+        display: 'browser',
         start_url: '/me',
         name: 'JustShare',
         short_name: 'JustShare',
